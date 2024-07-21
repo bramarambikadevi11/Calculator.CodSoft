@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-image: url('https://wallpaperaccess.com/full/1308246.jpg');  /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    width: 350px;
+    background-color: #383535;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(80, 79, 79, 0.2);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.display {
+    background-color: #434546;
+    color: #d2cdcd;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #55585a;  /* Sky blue color */
+    color: #bfbcbc;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #393d3f;  /* Slightly darker sky blue */
+}
+
+.btn:active {
+    background-color: #3c3f40;  /* Even darker sky blue */
+}
+
+.operator {
+    background-color: #393836;  /* Orange color */
+    color: #b4b0b0;
+}
+
+.operator:hover {
+    background-color: #4a4743;  /* Slightly darker orange */
+}
+
+.operator:active {
+    background-color: #504d48;  /* Even darker orange */
+}
+
+.equal {
+    grid-column: span 2;
+    background-color: #3c413c;  /* Lime green color */
+    color: #c3bfbf;
+}
+
+.equal:hover {
+    background-color: #363b36;  /* Slightly darker lime green */
+}
+
+.equal:active {
+    background-color: #333a33;  /* Even darker lime green */
+}
